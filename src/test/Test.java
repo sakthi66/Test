@@ -20,7 +20,7 @@ public class Test {
 		 WebDriver driver=new ChromeDriver();
 		 driver.manage().window().maximize();
 		 driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
-		 driver.get("https://test.thebramha.com/erp/login");
+		 driver.get("http://test.thebramha.com/erp/login");
 		 String url = driver.getCurrentUrl();
          System.out.println("Url:"+url);
          String title=driver.getTitle();
@@ -121,6 +121,8 @@ public class Test {
 		 driver.findElement(By.xpath("//div[text()='Registered Address']")).click();
 		 driver.findElement(By.id("city")).sendKeys("coimbatore");
 		 driver.findElement(By.id("addressLine1")).sendKeys("53/1,vivekananda street");
+		 driver.findElement(By.id("addressLine2")).sendKeys("Ng pudur");
+		 driver.findElement(By.id("addressLine3")).sendKeys("Gn mills(po)");
 		 driver.findElement(By.id("stateId")).click();
 		 r.keyPress(KeyEvent.VK_UP);
 		 r.keyRelease(KeyEvent.VK_UP);
@@ -131,15 +133,10 @@ public class Test {
 		 r.keyRelease(KeyEvent.VK_DOWN);
 		 r.keyPress(KeyEvent.VK_ENTER);
 		 r.keyRelease(KeyEvent.VK_ENTER);
-		 
-			
-		 
-		 
-		 
-		 
-		 
-		 
-		 
-	  
+		 driver.findElement(By.id("pincode")).sendKeys("641029");
+		 driver.findElement(By.id("contactPersonEmail")).sendKeys("gvj@gmail.com");
+		 driver.findElement(By.xpath("//button[text()=' Create']")).click();
+		 driver.findElement(By.xpath("//button[text()='Yes']")).click();
+		
 	}
 	}

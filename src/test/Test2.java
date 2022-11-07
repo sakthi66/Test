@@ -170,22 +170,8 @@ public class Test2 {
         Thread.sleep(2000);
         driver.findElement(By.xpath("//button[text()=' Create']")).click();
         driver.findElement(By.xpath("//button[text()='Yes']")).click();
-        
-        
-        
-        
-        
-        
-        
-        
-        
+      
        
-        
-        
-        
-        
-        
-        
       
 	}
 
