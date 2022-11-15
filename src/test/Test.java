@@ -136,7 +136,7 @@ public class Test {
 		 driver.findElement(By.id("pincode")).sendKeys("641029");
 		 driver.findElement(By.id("contactPersonEmail")).sendKeys("gvj@gmail.com");
 		 driver.findElement(By.xpath("//button[text()=' Create']")).click();
-		 driver.findElement(By.xpath("//button[text()='Yes']")).click();
+       //driver.findElement(By.xpath("//button[text()='Yes']")).click();
 		
 	}
 	}
